@@ -1,0 +1,16 @@
+{
+    "name": "sigit/snowlite",
+    "description": "test snow",
+    "autoload": {
+        "psr-4": {
+            "Sigit\\Snowlite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sigit"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
