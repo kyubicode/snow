@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Sigit\\Snowlite\\' => array($baseDir . '/src'),
+    'Snowlite\\' => array($baseDir . '/src'),
 );

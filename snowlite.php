@@ -16,3 +16,11 @@
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
     require_once __DIR__ . '/vendor/autoload.php';
 }
+// Inisialisasi plugin
+use Snowlite\Core\Snowlite;
+
+function snowlite_init() {
+    $plugin = new Snowlite();
+    $plugin->init();
+}
+add_action('plugins_loaded', 'snowlite_init');
