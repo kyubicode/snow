@@ -1,16 +1,21 @@
+
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development', // atau 'production' kalau udah selesai development
+  entry: './src/assets/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  resolve: {
+    extensions: ['.js', '.jsx'] // Tambahkan ini!
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/, // Biar bisa handle JS & JSX
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
