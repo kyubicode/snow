@@ -1,5 +1,5 @@
 # snow
-a small framework for building worpress plugins using modular and resuable / modern concepts <br/> 
+a small framework for building worpress plugins using wordpress scaffoldin and  modern concepts  <br/> 
 how to use it ? <br/>
 after installing worpress enter the wordpress plugin folder  <b>wp-content/plugins</b> <br/>
 and then you have to do a git clone example <br/> 
