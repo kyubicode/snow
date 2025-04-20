@@ -1,9 +1,8 @@
 import React from 'react';
-import '../css/styles.scss';
-
+import '../../css/styles.scss';  // Menggunakan jalur yang benar
 const App = () => (
   <div className="popup">
-    <h1>Tes Snowlite</h1>
+    <h1>Tes konten snow</h1>
   </div>
 );
 

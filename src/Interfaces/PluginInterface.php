@@ -1,5 +1,5 @@
 <?php
-namespace Snowlite\Interfaces;
+namespace Snow\Interfaces;
 
 interface PluginInterface {
     public function init();

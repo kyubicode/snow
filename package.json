@@ -1,9 +1,10 @@
 {
-  "name": "snowlite",
+  "name": "snow",
   "version": "0.1.0",
-  "main": "Gruntfile.js",
-  "author": "YOUR NAME HERE",
+  "main": "index.js",
+  "author": "sigit",
   "scripts": {
+    "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open"
   },
@@ -21,21 +22,19 @@
     "grunt-wp-readme-to-markdown": "~1.0.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
-    "sass": "^1.85.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sass": "^1.86.3",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
-    "webpack": "^5.98.0",
+    "webpack": "^5.99.6",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^5.2.1"
   },
   "directories": {
     "test": "tests"
   },
   "keywords": [],
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  }
+  "description": ""
 }

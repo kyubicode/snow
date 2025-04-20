@@ -1,15 +1,15 @@
 <?php
-namespace Snowlite\Core;
+namespace Snow\Core;
 
-use Snowlite\Interfaces\PluginInterface;
-use Snowlite\Traits\AssetLoader;
+use Snow\Interfaces\PluginInterface;
+use Snow\Traits\AssetLoader;
 
-class Snowlite implements PluginInterface {
+class SnowBase implements PluginInterface {
     use AssetLoader;
 
     public function init() {
         add_action('wp_footer', [$this, 'load_assets']);
-        add_shortcode('snowlite_popup', [$this, 'render_popup']);
+        add_shortcode('snow_popup', [$this, 'render_popup']);
     }
 
     public function render_popup() {
@@ -17,4 +17,5 @@ class Snowlite implements PluginInterface {
         $this->load_assets();
         return ob_get_clean();
     }
+
 }

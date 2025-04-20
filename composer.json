@@ -3,7 +3,7 @@
     "description": "test snow",
     "autoload": {
         "psr-4": {
-            "Snowlite\\": "src/"
+            "Snow\\": "src/"
         }
     },
     "authors": [
