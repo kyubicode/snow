@@ -30,12 +30,16 @@ trait AssetLoader {
             
         }
 
-        // Render div root buat React, hanya di frontend
+    }
+
+    public function rendering(){
+         // Render div root buat React, hanya di frontend
         if (!is_admin()) {
             echo '<div id="root"></div>';
         }
 
     }
+    
 }
 
 
